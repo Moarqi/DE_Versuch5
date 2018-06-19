@@ -1,0 +1,157 @@
+% Definition der Klasse des Dokumentes
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}        % Sorgt u.a. dafür, dass Texte vernünftig markierbar werden auch bei Sonderzeichen
+\usepackage{ae,aecompl} %bessere Schrift
+\usepackage{gensymb}
+\usepackage[ngerman]{babel}     % Deutsches Wörterbuch usw.
+\usepackage{epstopdf}   % Wandelt .eps Dateien automatisch um
+\usepackage{url}    % für URL mit \url{.....}
+\usepackage[font=small,labelfont=bf]{caption}       % Optionen für Bild- und Codeunterschriften
+\usepackage[hidelinks]{hyperref}                    % damit Links in der PDF anklickbar werden
+\usepackage{booktabs}   % bessere Tabellen mit Abstand zur hline
+\pagenumbering{arabic}
+\usepackage[babel,german=guillemets]{csquotes} %deutsches Anführungszeichen
+\usepackage{float} %bessere Positionierungsoptionen
+
+% Standardpakete für deutsche Sprache
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+% Volle Seite nutzen
+\usepackage{fullpage} 
+\headsep 1cm
+\parindent 0cm
+
+% einige Pakete für Mathematische Darstellung
+\usepackage{amssymb, amstext, amsmath}
+\usepackage{fancyhdr}
+
+% ein Paket für die Zählung von Seiten
+\usepackage{count1to}
+\usepackage{lastpage} 
+
+%Paket für Aufzählungsbuchstaben
+\usepackage{enumitem}
+
+
+\usepackage{nameref}
+
+
+
+% HIER DIE NAMEN UND EMAIL ANPASSEN
+\def \ATutantName{Moritz Breipohl}
+\def \ATutantEmail{mbreipohl@techfak.uni-bielefeld.de}
+\def \BTutantName{Markus Rothgänger}
+\def \BTutantEmail{mrothgaenger@techfak.uni-bielefeld.de}
+% HIER DIE VERSUCHSNUMMER ANPASSEN
+\def \Versuchsnummer{Versuch 5}
+% HIER DIE GRUPPENNUMMER ANPASSEN
+\def \Gruppennummer{Gruppe 5}
+% HIER DEN TUTORNAMEN ANPASSEN
+\def \Tutorname{Lukas Schmidt, Robin Ewers}
+
+% Kopfzeile und Fußzeile
+\lhead{\Versuchsnummer}
+\chead{\textbf{Digitalelektronisches Praktikum}}
+\rhead{\today}
+\lfoot{\Gruppennummer}
+\rfoot{\thepage\ von \pageref{LastPage}}
+\cfoot{}
+
+% Wird zur Einbindung von Bildern benötigt
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+% Physikalische Einheiten darstellen
+\usepackage{siunitx}
+
+% Einbinden des Literaturverzeichnisses
+\usepackage[style=numeric-comp]{biblatex}
+\bibliography{literatur.bib}
+
+% Wird zum Einbinden von LaTeX Code benötigt
+\usepackage{color}
+\usepackage{showexpl}
+\lstset
+{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    basicstyle=\tt\scriptsize,
+    keywordstyle=\color{blue},
+    identifierstyle=\color{magenta},
+}
+
+\renewcommand{\footrulewidth}{0.4pt}
+\pagestyle{fancy}
+
+% Konfiguration des Deckblatts
+\begin{titlepage}
+\title{\textbf{Digitalelektronisches Praktikum\\ Versuch 5}}
+\author{\ATutantName \\ \emph{\ATutantEmail} \and \BTutantName\\ \emph{\BTutantEmail}}
+\date{\Gruppennummer \\[3ex] Tutor: \Tutorname \\[3ex] \today}
+\end{titlepage}
+
+\begin{document}
+% Einfügen des Deckblatts
+\clearpage
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ab hier Beginn des Laborberichts: %%%%%%%%%%%%%%%%%%%%%
+
+\section*{Versuchsaufbau}
+\subsection*{Aufgabe}
+Im fünften Versuch sollten zwei verschiedene CMOS-Logikgatter mit mindestens zwei Eingängen sowohl simuliert als auch auf dem Steckbrett aufgebaut werden. Zur Untersuchung der Schaltung sollte das erwartete Verhalten anhand einer Logiktabelle mit dem gemessenen Verhalten verglichen werden. Des weiteren sollte die Schaltung durch eine integrierte Schaltung realisiert werden. Schließlich sollten alle Schaltungen auf ihre Verzögerungszeit und die Stromaufnahme untersucht werden.
+\subsection*{Erwartung}
+Die generell Erwartung ist, dass alle Gatter-Aufbauten ein gleiches Logikverhalten aufweisen. Aus den letzten Versuchen abgeleitet ist eine teils hohe Abweichung zwischen realen und simulierten Messungen in Bezug auf die Verzögerungszeit und die Stromaufnahme zu erwarten. Dennoch ist auch eine Abweichung der Messwerte von integriertem Schaltkreis (auch IC (integrated Circuit)) und dem aus transistoren aufgebauten Gatter möglich.
+
+
+vielleicht noch die Logikformeln????
+
+
+\subsection*{Aufbau}
+Es wurden ein NAND- und ein NOR-Gatter untersucht. Beide Aufbauten sind für den Simulator und das Steckbrett identisch.
+Zu beachten ist, dass die Messpunkte für die Ausgangsspannung ($U_{OUT}$) und den Querstrom ($I_{quer}$) in den Schemata eingezeichnet sind. Hier wurden dann Multimeter Spannungs- bzw. Stromrichtig angeschlossen.
+Der Aufbau des NAND-Gatters ist in \autoref{aufbauNAND} dargestellt, der des NOR-Gatters in \autoref{aufbauNOR}. Die beiden Eingangsspannungen ($U_{IN1}$ und $U_{IN2}$) wurden zeitweise über entprellte Taster, sowie über den Funktionsgenerator bedient.
+Zur Messung der Verzögerungszeit wurde außerdem die Ausgangsspannung $U_{OUT}$ mithilfe des Oszilloskopes betrachtet.
+\begin{figure}[htb]
+    \centering
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{NAND.pdf}
+        \caption{Aufbau des NAND-Gatters}
+        \label{aufbauNAND}
+    \end{minipage}% 
+    \hfill
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{NOR.pdf}
+        \caption{Aufbau des NOR-Gatters}
+        \label{aufbauNOR}
+    \end{minipage}
+\end{figure}
+
+TODO::: AUFBAU MIT IC
+
+\subsection*{Verwendete Bauteile}
+Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannung von $5V$, jweils zwei Transistoren vom Typ \textit{ZVN3306a} sowie vom Typ \textit{ZVP3306a}, ein Kondensator mit einer Kapazität von $470nF$, Funktionsgenerator und Oszilloskop, IC vom Typ \textit{CD4007UB}.
+\section*{Durchführung}
+\subsection*{Verifizierung des Logikverhaltens}
+Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier geprüft. Dabei wurde keine bzw. eine sehr niedrige Spannung als Zustand 0 (Aus) und eine höhere bzw. hohe Spannung als Zustand 1 (Ein) betrachtet. Die Ergebnisse wurden in Logiktabellen aufgenommen und mit dem erwarteten Verhalten verglichen.
+\subsection*{Messung des Querstroms}
+Zur Messung des Querstroms wurde am Steckbrett ein Ampermeter in Reihe in den Versorgungsstromkreis geschaltet. In der Simulation wurde die Stromaufnahme an der Spannungsquelle gemessen.
+\subsection*{Messung der Verzögerungszeit}
+Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit einer vom Funktionsgenerator generierten Kurve zu versorgen. Die Eingangskurve sowie der Spannungsverlauf am Ausgang wurden vom Oszilloskop aufgenommen und die Verzögerungszeit für die steigende als auch die abfallende Flanke mithilfe der Cursor bestimmt.
+
+TODO SIMULATION
+\section*{Messergebnisse}
+\subsection*{Logikverhalten}
+vier logiktabellen (inkl. erwartung)
+\subsection*{Querströme}
+je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, ic) aufzeigt.
+\section*{Auswertung}
+erwartung erfüllt? vergleich von steckbrett und ic
+\end{document}
