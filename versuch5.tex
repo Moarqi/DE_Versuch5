@@ -150,10 +150,8 @@ TODO SIMULATION
 \section*{Messergebnisse}
 \subsection*{Logikverhalten}
 vier logiktabellen (inkl. erwartung)
-\subsection*{Querströme}
-je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, ic) aufzeigt.
 
-\begin{table}[h]
+\begin{table}[H]
 	\center
 	\begin{tabular}{c|c|c}
 	& Flanke steigend [\si{\micro}S] & Flanke fallend [\si{\micro}S] 	\\ \hline
@@ -175,6 +173,33 @@ je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, 
 	\end{tabular}
 	\caption{Verzögerungszeiten an den NAND Gattern}
 	\label{verzögerungszeitenNAND}
+\end{table}
+
+\subsection*{Querströme}
+je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, ic) aufzeigt.
+
+\begin{table}[H]
+	\center
+	\begin{tabular}{c|c}
+	& Querstrom [\si{\micro}]	\\ \hline
+	Selbstgbaut & $5.06$ 		\\
+	IC 			& $224.6$ 		\\
+	Simulation 	& ALAN PLEASE FIX\\
+	\end{tabular}
+	\caption{Querstrom an den NOR Gattern}
+	\label{querstromNAND}
+
+
+
+	\center
+	\begin{tabular}{c|c}
+	& Querstrom [\si{\micro}]	\\ \hline
+	Selbstgbaut & $260$ 		\\
+	IC 			& $60$ 			\\
+	Simulation 	& ALAN PLEASE FIX\\
+	\end{tabular}
+	\caption{Querstrom an den NAND Gattern}
+	\label{querstromNAND}
 \end{table}
 
 \section*{Auswertung}
