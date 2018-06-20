@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.8)  19 JUN 2018 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.8)  20 JUN 2018 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,14 +740,306 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen138
 \Gin@req@width=\dimen139
 )
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
 
-! LaTeX Error: File `siunitx.sty' not found.
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/01/19 v6377 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
+L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
+L3 Module: l3str 2016/01/03 v6357 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/01/05 v6366 L3 Integers
+\c_max_int=\count126
+\l_tmpa_int=\count127
+\l_tmpb_int=\count128
+\g_tmpa_int=\count129
+\g_tmpb_int=\count130
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count131
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2015/09/28 v6113 L3 Messages
+L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
+\l_iow_line_count_int=\count132
+\l__iow_target_count_int=\count133
+\l__iow_current_line_int=\count134
+\l__iow_current_word_int=\count135
+\l__iow_current_indentation_int=\count136
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen140
+\c_max_dim=\dimen141
+\l_tmpa_dim=\dimen142
+\l_tmpb_dim=\dimen143
+\g_tmpa_dim=\dimen144
+\g_tmpb_dim=\dimen145
+\c_zero_skip=\skip58
+\c_max_skip=\skip59
+\l_tmpa_skip=\skip60
+\l_tmpb_skip=\skip61
+\g_tmpa_skip=\skip62
+\g_tmpb_skip=\skip63
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count137
+\l_keys_choice_int=\count138
+L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
+\c__fp_leading_shift_int=\count139
+\c__fp_middle_shift_int=\count140
+\c__fp_trailing_shift_int=\count141
+\c__fp_big_leading_shift_int=\count142
+\c__fp_big_middle_shift_int=\count143
+\c__fp_big_trailing_shift_int=\count144
+\c__fp_Bigg_leading_shift_int=\count145
+\c__fp_Bigg_middle_shift_int=\count146
+\c__fp_Bigg_trailing_shift_int=\count147
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box31
+\l_tmpa_box=\box32
+\l_tmpb_box=\box33
+\g_tmpa_box=\box34
+\g_tmpb_box=\box35
+L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
+\l__coffin_internal_box=\box36
+\l__coffin_internal_dim=\dimen146
+\l__coffin_offset_x_dim=\dimen147
+\l__coffin_offset_y_dim=\dimen148
+\l__coffin_x_dim=\dimen149
+\l__coffin_y_dim=\dimen150
+\l__coffin_x_prime_dim=\dimen151
+\l__coffin_y_prime_dim=\dimen152
+\c_empty_coffin=\box37
+\l__coffin_aligned_coffin=\box38
+\l__coffin_aligned_internal_coffin=\box39
+\l_tmpa_coffin=\box40
+\l_tmpb_coffin=\box41
+\l__coffin_display_coffin=\box42
+\l__coffin_display_coord_coffin=\box43
+\l__coffin_display_pole_coffin=\box44
+\l__coffin_display_offset_dim=\dimen153
+\l__coffin_display_x_dim=\dimen154
+\l__coffin_display_y_dim=\dimen155
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen156
+\l__box_bottom_dim=\dimen157
+\l__box_left_dim=\dimen158
+\l__box_right_dim=\dimen159
+\l__box_top_new_dim=\dimen160
+\l__box_bottom_new_dim=\dimen161
+\l__box_left_new_dim=\dimen162
+\l__box_right_new_dim=\dimen163
+\l__box_internal_box=\box45
+\l__coffin_bounding_shift_dim=\dimen164
+\l__coffin_left_corner_dim=\dimen165
+\l__coffin_right_corner_dim=\dimen166
+\l__coffin_bottom_corner_dim=\dimen167
+\l__coffin_top_corner_dim=\dimen168
+\l__coffin_scaled_total_height_dim=\dimen169
+\l__coffin_scaled_width_dim=\dimen170
+L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count148
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count149
+\l__xparse_m_args_int=\count150
+\l__xparse_mandatory_args_int=\count151
+\l__xparse_processor_int=\count152
+\l__xparse_v_nesting_int=\count153
+)
+Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen171
+\extrarowheight=\dimen172
+\NC@list=\toks27
+\extratabsurround=\skip64
+\backup@length=\skip65
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box46
+\l__siunitx_tmp_dim=\dimen173
+\l__siunitx_tmp_int=\count154
+\l__siunitx_number_mantissa_length_int=\count155
+\l__siunitx_number_uncert_length_int=\count156
+\l__siunitx_round_int=\count157
+\l__siunitx_process_decimal_int=\count158
+\l__siunitx_process_uncertainty_int=\count159
+\l__siunitx_process_fixed_int=\count160
+\l__siunitx_process_integer_min_int=\count161
+\l__siunitx_process_precision_int=\count162
+\l__siunitx_group_min_int=\count163
+\l__siunitx_angle_marker_box=\box47
+\l__siunitx_angle_unit_box=\box48
+\l__siunitx_angle_marker_dim=\dimen174
+\l__siunitx_angle_unit_dim=\dimen175
+\l__siunitx_unit_int=\count164
+\l__siunitx_unit_denominator_int=\count165
+\l__siunitx_unit_numerator_int=\count166
+\l__siunitx_unit_prefix_int=\count167
+\l__siunitx_unit_prefix_base_int=\count168
+\l__siunitx_unit_prefix_gram_int=\count169
+\l__siunitx_number_product_int=\count170
+\c__siunitx_one_fill_skip=\skip66
+\l__siunitx_table_unit_align_skip=\skip67
+\l__siunitx_table_exponent_dim=\dimen176
+\l__siunitx_table_integer_dim=\dimen177
+\l__siunitx_table_mantissa_dim=\dimen178
+\l__siunitx_table_marker_dim=\dimen179
+\l__siunitx_table_result_dim=\dimen180
+\l__siunitx_table_uncert_dim=\dimen181
+\l__siunitx_table_fill_pre_dim=\dimen182
+\l__siunitx_table_fill_post_dim=\dimen183
+\l__siunitx_table_fill_mid_dim=\dimen184
+\l__siunitx_table_pre_box=\box49
+\l__siunitx_table_post_box=\box50
+\l__siunitx_table_mantissa_box=\box51
+\l__siunitx_table_result_box=\box52
+\l__siunitx_table_number_align_skip=\skip68
+\l__siunitx_table_text_align_skip=\skip69
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7218.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7221.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7224.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7227.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7230.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7233.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7236.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7251.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7260.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7269.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7278.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7290.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7302.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7314.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7317.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7332.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7344.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7391.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
+. 7393.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7395.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7397.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
+. 7399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7400.
+.................................................
+\g__file_internal_ior=\read1
 
-Enter file name: 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex))) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
 
 
@@ -761,7 +1053,7 @@ B)
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count126
+\lrq@indent=\count171
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -769,57 +1061,57 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count127
-\c@listtotal=\count128
-\c@listcount=\count129
-\c@liststart=\count130
-\c@liststop=\count131
-\c@citecount=\count132
-\c@citetotal=\count133
-\c@multicitecount=\count134
-\c@multicitetotal=\count135
-\c@instcount=\count136
-\c@maxnames=\count137
-\c@minnames=\count138
-\c@maxitems=\count139
-\c@minitems=\count140
-\c@citecounter=\count141
-\c@savedcitecounter=\count142
-\c@uniquelist=\count143
-\c@uniquename=\count144
-\c@refsection=\count145
-\c@refsegment=\count146
-\c@maxextratitle=\count147
-\c@maxextratitleyear=\count148
-\c@maxextrayear=\count149
-\c@maxextraalpha=\count150
-\c@abbrvpenalty=\count151
-\c@highnamepenalty=\count152
-\c@lownamepenalty=\count153
-\c@maxparens=\count154
-\c@parenlevel=\count155
-\blx@tempcnta=\count156
-\blx@tempcntb=\count157
-\blx@tempcntc=\count158
-\blx@maxsection=\count159
-\blx@maxsegment@0=\count160
-\blx@notetype=\count161
-\blx@parenlevel@text=\count162
-\blx@parenlevel@foot=\count163
-\blx@sectionciteorder@0=\count164
-\labelnumberwidth=\skip58
-\labelalphawidth=\skip59
-\biblabelsep=\skip60
-\bibitemsep=\skip61
-\bibnamesep=\skip62
-\bibinitsep=\skip63
-\bibparsep=\skip64
-\bibhang=\skip65
-\blx@bcfin=\read1
+\c@tabx@nest=\count172
+\c@listtotal=\count173
+\c@listcount=\count174
+\c@liststart=\count175
+\c@liststop=\count176
+\c@citecount=\count177
+\c@citetotal=\count178
+\c@multicitecount=\count179
+\c@multicitetotal=\count180
+\c@instcount=\count181
+\c@maxnames=\count182
+\c@minnames=\count183
+\c@maxitems=\count184
+\c@minitems=\count185
+\c@citecounter=\count186
+\c@savedcitecounter=\count187
+\c@uniquelist=\count188
+\c@uniquename=\count189
+\c@refsection=\count190
+\c@refsegment=\count191
+\c@maxextratitle=\count192
+\c@maxextratitleyear=\count193
+\c@maxextrayear=\count194
+\c@maxextraalpha=\count195
+\c@abbrvpenalty=\count196
+\c@highnamepenalty=\count197
+\c@lownamepenalty=\count198
+\c@maxparens=\count199
+\c@parenlevel=\count266
+\blx@tempcnta=\count267
+\blx@tempcntb=\count268
+\blx@tempcntc=\count269
+\blx@maxsection=\count270
+\blx@maxsegment@0=\count271
+\blx@notetype=\count272
+\blx@parenlevel@text=\count273
+\blx@parenlevel@foot=\count274
+\blx@sectionciteorder@0=\count275
+\labelnumberwidth=\skip70
+\labelalphawidth=\skip71
+\biblabelsep=\skip72
+\bibitemsep=\skip73
+\bibnamesep=\skip74
+\bibinitsep=\skip75
+\bibparsep=\skip76
+\bibhang=\skip77
+\blx@bcfin=\read2
 \blx@bcfout=\write3
-\c@mincomprange=\count165
-\c@maxcomprange=\count166
-\c@mincompwidth=\count167
+\c@mincomprange=\count276
+\c@maxcomprange=\count277
+\c@mincompwidth=\count278
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -828,78 +1120,78 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count168
-\c@savedafterword=\count169
-\c@annotator=\count170
-\c@savedannotator=\count171
-\c@author=\count172
-\c@savedauthor=\count173
-\c@bookauthor=\count174
-\c@savedbookauthor=\count175
-\c@commentator=\count176
-\c@savedcommentator=\count177
-\c@editor=\count178
-\c@savededitor=\count179
-\c@editora=\count180
-\c@savededitora=\count181
-\c@editorb=\count182
-\c@savededitorb=\count183
-\c@editorc=\count184
-\c@savededitorc=\count185
-\c@foreword=\count186
-\c@savedforeword=\count187
-\c@holder=\count188
-\c@savedholder=\count189
-\c@introduction=\count190
-\c@savedintroduction=\count191
-\c@namea=\count192
-\c@savednamea=\count193
-\c@nameb=\count194
-\c@savednameb=\count195
-\c@namec=\count196
-\c@savednamec=\count197
-\c@translator=\count198
-\c@savedtranslator=\count199
-\c@shortauthor=\count266
-\c@savedshortauthor=\count267
-\c@shorteditor=\count268
-\c@savedshorteditor=\count269
-\c@labelname=\count270
-\c@savedlabelname=\count271
-\c@institution=\count272
-\c@savedinstitution=\count273
-\c@lista=\count274
-\c@savedlista=\count275
-\c@listb=\count276
-\c@savedlistb=\count277
-\c@listc=\count278
-\c@savedlistc=\count279
-\c@listd=\count280
-\c@savedlistd=\count281
-\c@liste=\count282
-\c@savedliste=\count283
-\c@listf=\count284
-\c@savedlistf=\count285
-\c@location=\count286
-\c@savedlocation=\count287
-\c@organization=\count288
-\c@savedorganization=\count289
-\c@origlocation=\count290
-\c@savedoriglocation=\count291
-\c@origpublisher=\count292
-\c@savedorigpublisher=\count293
-\c@publisher=\count294
-\c@savedpublisher=\count295
-\c@language=\count296
-\c@savedlanguage=\count297
-\c@pageref=\count298
-\c@savedpageref=\count299
-\shorthandwidth=\skip66
-\shortjournalwidth=\skip67
-\shortserieswidth=\skip68
-\shorttitlewidth=\skip69
-\shortauthorwidth=\skip70
-\shorteditorwidth=\skip71
+\c@afterword=\count279
+\c@savedafterword=\count280
+\c@annotator=\count281
+\c@savedannotator=\count282
+\c@author=\count283
+\c@savedauthor=\count284
+\c@bookauthor=\count285
+\c@savedbookauthor=\count286
+\c@commentator=\count287
+\c@savedcommentator=\count288
+\c@editor=\count289
+\c@savededitor=\count290
+\c@editora=\count291
+\c@savededitora=\count292
+\c@editorb=\count293
+\c@savededitorb=\count294
+\c@editorc=\count295
+\c@savededitorc=\count296
+\c@foreword=\count297
+\c@savedforeword=\count298
+\c@holder=\count299
+\c@savedholder=\count300
+\c@introduction=\count301
+\c@savedintroduction=\count302
+\c@namea=\count303
+\c@savednamea=\count304
+\c@nameb=\count305
+\c@savednameb=\count306
+\c@namec=\count307
+\c@savednamec=\count308
+\c@translator=\count309
+\c@savedtranslator=\count310
+\c@shortauthor=\count311
+\c@savedshortauthor=\count312
+\c@shorteditor=\count313
+\c@savedshorteditor=\count314
+\c@labelname=\count315
+\c@savedlabelname=\count316
+\c@institution=\count317
+\c@savedinstitution=\count318
+\c@lista=\count319
+\c@savedlista=\count320
+\c@listb=\count321
+\c@savedlistb=\count322
+\c@listc=\count323
+\c@savedlistc=\count324
+\c@listd=\count325
+\c@savedlistd=\count326
+\c@liste=\count327
+\c@savedliste=\count328
+\c@listf=\count329
+\c@savedlistf=\count330
+\c@location=\count331
+\c@savedlocation=\count332
+\c@organization=\count333
+\c@savedorganization=\count334
+\c@origlocation=\count335
+\c@savedoriglocation=\count336
+\c@origpublisher=\count337
+\c@savedorigpublisher=\count338
+\c@publisher=\count339
+\c@savedpublisher=\count340
+\c@language=\count341
+\c@savedlanguage=\count342
+\c@pageref=\count343
+\c@savedpageref=\count344
+\shorthandwidth=\skip78
+\shortjournalwidth=\skip79
+\shortserieswidth=\skip80
+\shorttitlewidth=\skip81
+\shortauthorwidth=\skip82
+\shorteditorwidth=\skip83
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -911,13 +1203,13 @@ Package biblatex Info: ... file 'biblatex_.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_.def
 File: biblatex_.def 
-\c@textcitecount=\count300
-\c@textcitetotal=\count301
-\c@textcitemaxnames=\count302
-\c@biburlnumpenalty=\count303
-\c@biburlucpenalty=\count304
-\c@biburllcpenalty=\count305
-\c@smartand=\count306
+\c@textcitecount=\count345
+\c@textcitetotal=\count346
+\c@textcitemaxnames=\count347
+\c@biburlnumpenalty=\count348
+\c@biburlucpenalty=\count349
+\c@biburllcpenalty=\count350
+\c@smartand=\count351
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
@@ -934,16 +1226,16 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count307
-\c@bbx:relatedtotal=\count308
+\c@bbx:relatedcount=\count352
+\c@bbx:relatedtotal=\count353
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count309
-\c@cbx@tempcntb=\count310
+\c@cbx@tempcnta=\count354
+\c@cbx@tempcntb=\count355
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -974,24 +1266,24 @@ Package color Info: Driver file: pdftex.def on input line 143.
 Package: showexpl 2014/01/19 v0.3l Typesetting example code (RN)
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count311
-\lst@gtempboxa=\box31
-\lst@token=\toks27
-\lst@length=\count312
-\lst@currlwidth=\dimen140
-\lst@column=\count313
-\lst@pos=\count314
-\lst@lostspace=\dimen141
-\lst@width=\dimen142
-\lst@newlines=\count315
-\lst@lineno=\count316
-\lst@maxwidth=\dimen143
+\lst@mode=\count356
+\lst@gtempboxa=\box53
+\lst@token=\toks28
+\lst@length=\count357
+\lst@currlwidth=\dimen185
+\lst@column=\count358
+\lst@pos=\count359
+\lst@lostspace=\dimen186
+\lst@width=\dimen187
+\lst@newlines=\count360
+\lst@lineno=\count361
+\lst@maxwidth=\dimen188
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count317
-\lst@skipnumbers=\count318
-\lst@framebox=\box32
+\c@lstnumber=\count362
+\lst@skipnumbers=\count363
+\lst@framebox=\box54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1000,31 +1292,31 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count319
-\calc@Bcount=\count320
-\calc@Adimen=\dimen144
-\calc@Bdimen=\dimen145
-\calc@Askip=\skip72
-\calc@Bskip=\skip73
+\calc@Acount=\count364
+\calc@Bcount=\count365
+\calc@Adimen=\dimen189
+\calc@Bdimen=\dimen190
+\calc@Askip=\skip84
+\calc@Bskip=\skip85
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count321
-\calc@Cskip=\skip74
+\calc@Ccount=\count366
+\calc@Cskip=\skip86
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box33
-\sift@deathcycles=\count322
-\@vwid@loff=\dimen146
-\@vwid@roff=\dimen147
+\@vwid@box=\box55
+\sift@deathcycles=\count367
+\@vwid@loff=\dimen191
+\@vwid@roff=\dimen192
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\lst@WFtoken=\toks28
+\lst@WFtoken=\toks29
 \lst@WF=\write4
 )
-\SX@ResBox=\box34
-\c@ltxexample=\count323
+\SX@ResBox=\box56
+\c@ltxexample=\count368
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1057,7 +1349,7 @@ File: lstlang3.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 95.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 94.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1071,32 +1363,39 @@ Package biblatex Info: ... file 'german.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 ))
-(./versuch5.aux)
+(./versuch5.aux
+
+LaTeX Warning: Label `logikNOR' multiply defined.
+
+
+LaTeX Warning: Label `querstromNAND' multiply defined.
+
+)
 \openout1 = `versuch5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Info: Redefining \celsius on input line 95.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Info: Redefining \celsius on input line 94.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 94.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 95.
-Package gensymb Info: Using \Omega for \ohm on input line 95.
+LaTeX Info: Redefining \ohm on input line 94.
+Package gensymb Info: Using \Omega for \ohm on input line 94.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1105,11 +1404,11 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 95.
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+\AtBeginShipoutBox=\box57
+Package hyperref Info: Link coloring OFF on input line 94.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
 (./versuch5.out) (./versuch5.out)
 \@outlinefile=\write5
 \openout5 = `versuch5.out'.
@@ -1118,21 +1417,102 @@ LaTeX Info: Redefining \nameref on input line 95.
 ABD: Count1to9 initializing macros
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 95.
+(lastpage)             ! on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count324
-\scratchdimen=\dimen148
-\scratchbox=\box36
-\nofMPsegments=\count325
-\nofMParguments=\count326
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count327
-\MPscratchDim=\dimen149
-\MPnumerator=\count328
-\makeMPintoPDFobject=\count329
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count369
+\scratchdimen=\dimen193
+\scratchbox=\box58
+\nofMPsegments=\count370
+\nofMParguments=\count371
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count372
+\MPscratchDim=\dimen194
+\MPnumerator=\count373
+\makeMPintoPDFobject=\count374
+\everyMPtoPDFconversion=\toks31
+)
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
+ic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1143,41 +1523,56 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'versuch5.bbl' not found.
 
 No file versuch5.bbl.
-Package biblatex Info: Reference section=0 on input line 95.
-Package biblatex Info: Reference segment=0 on input line 95.
-\c@lstlisting=\count330
-LaTeX Font Info:    Try loading font information for U+msa on input line 99.
+Package biblatex Info: Reference section=0 on input line 94.
+Package biblatex Info: Reference segment=0 on input line 94.
+\c@lstlisting=\count375
+\c__siunitx_mathsf_int=\count376
+LaTeX Font Info:    Try loading font information for U+msa on input line 94.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 99.
+LaTeX Font Info:    Try loading font information for U+msb on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+\c__siunitx_mathtt_int=\count377
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 99.
  [1.1.0.0.0.0.0.0.0.1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<images/NAND.pdf, id=14, 318.8161pt x 221.10104pt>
+<images/NAND.pdf, id=16, 318.8161pt x 221.10104pt>
 File: images/NAND.pdf Graphic file (type pdf)
  <use images/NAND.pdf>
-Package pdftex.def Info: images/NAND.pdf used on input line 124.
+Package pdftex.def Info: images/NAND.pdf used on input line 122.
 (pdftex.def)             Requested size: 203.83417pt x 141.3591pt.
 
-<images/NOR.pdf, id=15, 284.93953pt x 254.9776pt>
+<images/NOR.pdf, id=17, 285.01483pt x 242.9326pt>
 File: images/NOR.pdf Graphic file (type pdf)
  <use images/NOR.pdf>
-Package pdftex.def Info: images/NOR.pdf used on input line 131.
-(pdftex.def)             Requested size: 203.83417pt x 182.40097pt.
+Package pdftex.def Info: images/NOR.pdf used on input line 129.
+(pdftex.def)             Requested size: 203.83417pt x 173.74367pt.
+
+<images/IC_NAND.pdf, id=18, 344.03531pt x 187.07391pt>
+File: images/IC_NAND.pdf Graphic file (type pdf)
+
+<use images/IC_NAND.pdf>
+Package pdftex.def Info: images/IC_NAND.pdf used on input line 138.
+(pdftex.def)             Requested size: 203.83417pt x 110.83792pt.
+ <images/IC_NOR.pdf, id=19, 344.78813pt x 194.60204pt>
+File: images/IC_NOR.pdf Graphic file (type pdf)
+
+<use images/IC_NOR.pdf>
+Package pdftex.def Info: images/IC_NOR.pdf used on input line 145.
+(pdftex.def)             Requested size: 203.83417pt x 115.0458pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1186,18 +1581,65 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 152.
 [2.2 <./images/NAND.pdf> <./images/NOR.pdf
 
 pdfTeX warning: pdflatex (file ./images/NOR.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
->] 
+>]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 190.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 190.
+[3.3.0.0.0.0.0.0.0.1 <./images/IC_NAND.pdf> <./images/IC_NOR.pdf
+
+pdfTeX warning: pdflatex (file ./images/IC_NOR.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>]
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 198.
+
+LaTeX Font Info:    No file TS1aer.fd. on input line 198.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 198.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+
+LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `c__siunitx_mu_tl' on input line 198.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 246.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 246.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 246.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 246.
+[4.4] 
 AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1206,52 +1648,60 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 250.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 250.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 250.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 157.
-[3.3.0.0.0.0.0.0.0.1]
+(babel)             in language  on input line 250.
+[5.5.0.0.0.0.0.0.0.1]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 250.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 157.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+(babel)             in language  on input line 250.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
  (./versuch5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `versuch5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'versuch5.run.xml'.
 \openout1 = `versuch5.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
- 16259 strings out of 494860
- 256852 string characters out of 6177603
- 719559 words of memory out of 5000000
- 19226 multiletter control sequences out of 15000+600000
- 40736 words of font info for 86 fonts, out of 8000000 for 9000
+ 25687 strings out of 494860
+ 469709 string characters out of 6177603
+ 882261 words of memory out of 5000000
+ 28584 multiletter control sequences out of 15000+600000
+ 46640 words of font info for 99 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 42i,11n,67p,964b,1396s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/u
-hvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on versuch5.pdf (3 pages, 217542 bytes).
+ 42i,14n,67p,10359b,1396s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/markus/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on versuch5.pdf (5 pages, 244289 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
