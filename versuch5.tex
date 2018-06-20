@@ -114,7 +114,7 @@ vielleicht noch die Logikformeln????
 
 \subsection*{Aufbau}
 Es wurden ein NAND- und ein NOR-Gatter untersucht. Beide Aufbauten sind für den Simulator und das Steckbrett identisch.
-Zu beachten ist, dass die Messpunkte für die Ausgangsspannung ($U_{OUT}$) und den Querstrom ($I_{quer}$) in den Schemata eingezeichnet sind. Hier wurden dann Multimeter Spannungs- bzw. Stromrichtig angeschlossen.
+Zu beachten ist, dass die Messpunkte für die Ausgangsspannung ($U_{OUT}$) und den statischen Querstrom ($I_{quer}$) in den Schemata eingezeichnet sind. Hier wurden dann Multimeter Spannungs- bzw. Stromrichtig angeschlossen.
 Der Aufbau des NAND-Gatters ist in \autoref{aufbauNAND} dargestellt, der des NOR-Gatters in \autoref{aufbauNOR}. Die beiden Eingangsspannungen ($U_{IN1}$ und $U_{IN2}$) wurden zeitweise über entprellte Taster, sowie über den Funktionsgenerator bedient.
 Zur Messung der Verzögerungszeit wurde außerdem die Ausgangsspannung $U_{OUT}$ mithilfe des Oszilloskopes betrachtet.
 Mit gleicher Handhabung zum Messen wurden die Schaltungen mit Hilfe von ICs aufgebaut. Diese Aufbauten am Steckbrett sind in \autoref{aufbauNANDIC} (NAND) und \autoref{aufbauNORIC} (NOR) zu sehen.
@@ -155,17 +155,21 @@ Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannun
 \section*{Durchführung}
 \subsection*{Verifizierung des Logikverhaltens}
 Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier geprüft. Dabei wurde keine bzw. eine sehr niedrige Spannung als Zustand 0 (Aus) und eine höhere bzw. hohe Spannung als Zustand 1 (Ein) betrachtet. Die Ergebnisse wurden in Logiktabellen aufgenommen und mit dem erwarteten Verhalten verglichen.
-\subsection*{Messung des Querstroms}
-Zur Messung des Querstroms wurde am Steckbrett ein Ampermeter in Reihe in den Versorgungsstromkreis geschaltet. In der Simulation wurde die Stromaufnahme an der Spannungsquelle gemessen.
+\subsection*{Messung des statischen Querstroms}
+Zur Messung des Querstroms wurde am Steckbrett ein Ampermeter in Reihe in den Versorgungsstromkreis geschaltet.
+Die Versorgungsspannung lag bei konstanten $U_{VDD} = 5V$ mit einer Strombegrenzung von etwa $I = 0.2A$. Es war darauf zu achten, dass während der Strommessung kein Schaltvorgang durchgeführt wurde, da sonst der dynamische statt dem statischen Querstrom gemessen würde.
+In der Simulation wurde die Stromaufnahme an der Spannungsquelle gemessen. 
 \subsection*{Messung der Verzögerungszeit}
 Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit einer vom Funktionsgenerator generierten Kurve zu versorgen. Die Eingangskurve sowie der Spannungsverlauf am Ausgang wurden vom Oszilloskop aufgenommen und die Verzögerungszeit für die steigende als auch die abfallende Flanke mithilfe der Cursor bestimmt.
 
-TODO SIMULATION
+Ähnlich wurde die Verzögerungszeit in der Simulation bestimmt. Die beiden Eingänge wurden als Pulsierende Spannungsquellen definiert, die eine unterschiedlichen rhytmus
 \section*{Messergebnisse}
 \subsection*{Logikverhalten}
 vier logiktabellen (inkl. erwartung)
-\subsection*{Querströme}
+\subsection*{statische Querströme}
 je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, ic) aufzeigt.
+\subsection*{Verzögerungszeiten}
+Da die Verzögerungszeiten für beide Eingänge sehr ähnlich bzw. gleich waren, werden hier der Übersicht halber nur die Messergebnisse für die Veränderung des Zustands eines Eingangs aufgezeigt.
 \section*{Auswertung}
 erwartung erfüllt? vergleich von steckbrett und ic
 \end{document}
