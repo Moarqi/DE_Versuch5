@@ -106,11 +106,9 @@
 \subsection*{Aufgabe}
 Im fünften Versuch sollten zwei verschiedene CMOS-Logikgatter mit mindestens zwei Eingängen sowohl simuliert als auch auf dem Steckbrett aufgebaut werden. Zur Untersuchung der Schaltung sollte das erwartete Verhalten anhand einer Logiktabelle mit dem gemessenen Verhalten verglichen werden. Des weiteren sollte die Schaltung durch eine integrierte Schaltung realisiert werden. Schließlich sollten alle Schaltungen auf ihre Verzögerungszeit und die Stromaufnahme untersucht werden.
 \subsection*{Erwartung}
-Die generell Erwartung ist, dass alle Gatter-Aufbauten ein gleiches Logikverhalten aufweisen. Aus den letzten Versuchen abgeleitet ist eine teils hohe Abweichung zwischen realen und simulierten Messungen in Bezug auf die Verzögerungszeit und die Stromaufnahme zu erwarten. Dennoch ist auch eine Abweichung der Messwerte von integriertem Schaltkreis (auch IC (integrated Circuit)) und dem aus transistoren aufgebauten Gatter möglich.
+Die generelle Erwartung ist, dass alle Gatter-Aufbauten ein gleiches Logikverhalten aufweisen. Aus den letzten Versuchen abgeleitet ist eine teils hohe Abweichung zwischen realen und simulierten Messungen in Bezug auf die Verzögerungszeit und die Stromaufnahme zu erwarten. Dennoch ist auch eine Abweichung der Messwerte von integriertem Schaltkreis (auch IC (integrated Circuit)) und dem aus transistoren aufgebauten Gatter möglich.
 
-
-vielleicht noch die Logikformeln????
-
+% Die Logikformeln sind jetzt in den Tabellen der Messwerte integriert
 
 \subsection*{Aufbau}
 Es wurden ein NAND- und ein NOR-Gatter untersucht. Beide Aufbauten sind für den Simulator und das Steckbrett identisch.
@@ -154,15 +152,15 @@ Mit gleicher Handhabung zum Messen wurden die Schaltungen mit Hilfe von ICs aufg
 Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannung von $5V$, jweils zwei Transistoren vom Typ \textit{ZVN3306a} sowie vom Typ \textit{ZVP3306a}, ein Kondensator mit einer Kapazität von $470nF$, Funktionsgenerator und Oszilloskop, IC vom Typ \textit{CD4007UB}.
 \section*{Durchführung}
 \subsection*{Verifizierung des Logikverhaltens}
-Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier geprüft. Dabei wurde keine bzw. eine sehr niedrige Spannung als Zustand 0 (Aus) und eine höhere bzw. hohe Spannung als Zustand 1 (Ein) betrachtet. Die Ergebnisse wurden in Logiktabellen aufgenommen und mit dem erwarteten Verhalten verglichen.
+Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier geprüft. Dabei wurden die Eingäng über entprellte Schalter angesteuert, welche an einem Netzteil mit 5V Versorgungsspannung angeschlossen waren. Am Ausgang der Schaltung befand sich eine LED, über deren Status (leuchtet oder leuchtet nicht) geprüft werden konnte, ob die Schaltung den Stromfluss zum Ausgang erlaubt. 
 \subsection*{Messung des statischen Querstroms}
-Zur Messung des Querstroms wurde am Steckbrett ein Ampermeter in Reihe in den Versorgungsstromkreis geschaltet.
+Zur Messung des Querstroms wurde am Steckbrett ein Amperemeter in Reihe in den Versorgungsstromkreis geschaltet.
 Die Versorgungsspannung lag bei konstanten $U_{VDD} = 5V$ mit einer Strombegrenzung von etwa $I = 0.2A$. Es war darauf zu achten, dass während der Strommessung kein Schaltvorgang durchgeführt wurde, da sonst der dynamische statt dem statischen Querstrom gemessen würde.
 In der Simulation wurde die Stromaufnahme an der Spannungsquelle gemessen. 
 \subsection*{Messung der Verzögerungszeit}
 Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit einer vom Funktionsgenerator generierten Kurve zu versorgen. Die Eingangskurve sowie der Spannungsverlauf am Ausgang wurden vom Oszilloskop aufgenommen und die Verzögerungszeit für die steigende als auch die abfallende Flanke mithilfe der Cursor bestimmt.
 
-Ähnlich wurde die Verzögerungszeit in der Simulation bestimmt. Die beiden Eingänge wurden als Pulsierende Spannungsquellen definiert, die eine unterschiedlichen rhytmus
+Ähnlich wurde die Verzögerungszeit in der Simulation bestimmt. Die beiden Eingänge wurden als pulsierende Spannungsquellen definiert, die eine unterschiedlichen Rythmus
 \section*{Messergebnisse}
 \subsection*{Logikverhalten}
 vier logiktabellen (inkl. erwartung)
