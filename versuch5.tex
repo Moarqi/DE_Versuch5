@@ -114,9 +114,10 @@ vielleicht noch die Logikformeln????
 
 \subsection*{Aufbau}
 Es wurden ein NAND- und ein NOR-Gatter untersucht. Beide Aufbauten sind für den Simulator und das Steckbrett identisch.
-Zu beachten ist, dass die Messpunkte für die Ausgangsspannung ($U_{OUT}$) und den Querstrom ($I_{quer}$) in den Schemata eingezeichnet sind. Hier wurden dann Multimeter Spannungs- bzw. Stromrichtig angeschlossen.
+Zu beachten ist, dass die Messpunkte für die Ausgangsspannung ($U_{OUT}$) und den statischen Querstrom ($I_{quer}$) in den Schemata eingezeichnet sind. Hier wurden dann Multimeter Spannungs- bzw. Stromrichtig angeschlossen.
 Der Aufbau des NAND-Gatters ist in \autoref{aufbauNAND} dargestellt, der des NOR-Gatters in \autoref{aufbauNOR}. Die beiden Eingangsspannungen ($U_{IN1}$ und $U_{IN2}$) wurden zeitweise über entprellte Taster, sowie über den Funktionsgenerator bedient.
 Zur Messung der Verzögerungszeit wurde außerdem die Ausgangsspannung $U_{OUT}$ mithilfe des Oszilloskopes betrachtet.
+Mit gleicher Handhabung zum Messen wurden die Schaltungen mit Hilfe von ICs aufgebaut. Diese Aufbauten am Steckbrett sind in \autoref{aufbauNANDIC} (NAND) und \autoref{aufbauNORIC} (NOR) zu sehen.
 \begin{figure}[htb]
     \centering
     \begin{minipage}[t]{0.45\linewidth}
@@ -133,47 +134,38 @@ Zur Messung der Verzögerungszeit wurde außerdem die Ausgangsspannung $U_{OUT}$
         \label{aufbauNOR}
     \end{minipage}
 \end{figure}
-
-TODO::: AUFBAU MIT IC
-
+\begin{figure}[htb]
+    \centering
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{IC_NAND.pdf}
+        \caption{Aufbau des NAND-Gatters mit IC}
+        \label{aufbauNANDIC}
+    \end{minipage}% 
+    \hfill
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{IC_NOR.pdf}
+        \caption{Aufbau des NOR-Gatters mit IC}
+        \label{aufbauNORIC}
+    \end{minipage}
+\end{figure}
 \subsection*{Verwendete Bauteile}
 Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannung von $5V$, jweils zwei Transistoren vom Typ \textit{ZVN3306a} sowie vom Typ \textit{ZVP3306a}, ein Kondensator mit einer Kapazität von $470nF$, Funktionsgenerator und Oszilloskop, IC vom Typ \textit{CD4007UB}.
 \section*{Durchführung}
 \subsection*{Verifizierung des Logikverhaltens}
 Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier geprüft. Dabei wurde keine bzw. eine sehr niedrige Spannung als Zustand 0 (Aus) und eine höhere bzw. hohe Spannung als Zustand 1 (Ein) betrachtet. Die Ergebnisse wurden in Logiktabellen aufgenommen und mit dem erwarteten Verhalten verglichen.
-\subsection*{Messung des Querstroms}
-Zur Messung des Querstroms wurde am Steckbrett ein Ampermeter in Reihe in den Versorgungsstromkreis geschaltet. In der Simulation wurde die Stromaufnahme an der Spannungsquelle gemessen.
+\subsection*{Messung des statischen Querstroms}
+Zur Messung des Querstroms wurde am Steckbrett ein Ampermeter in Reihe in den Versorgungsstromkreis geschaltet.
+Die Versorgungsspannung lag bei konstanten $U_{VDD} = 5V$ mit einer Strombegrenzung von etwa $I = 0.2A$. Es war darauf zu achten, dass während der Strommessung kein Schaltvorgang durchgeführt wurde, da sonst der dynamische statt dem statischen Querstrom gemessen würde.
+In der Simulation wurde die Stromaufnahme an der Spannungsquelle gemessen. 
 \subsection*{Messung der Verzögerungszeit}
 Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit einer vom Funktionsgenerator generierten Kurve zu versorgen. Die Eingangskurve sowie der Spannungsverlauf am Ausgang wurden vom Oszilloskop aufgenommen und die Verzögerungszeit für die steigende als auch die abfallende Flanke mithilfe der Cursor bestimmt.
 
-TODO SIMULATION
+Ähnlich wurde die Verzögerungszeit in der Simulation bestimmt. Die beiden Eingänge wurden als Pulsierende Spannungsquellen definiert, die eine unterschiedlichen rhytmus
 \section*{Messergebnisse}
 \subsection*{Logikverhalten}
 vier logiktabellen (inkl. erwartung)
-
-\begin{table}[H]
-	\center
-	\begin{tabular}{c|c|c}
-	& Flanke steigend [\si{\micro}S] & Flanke fallend [\si{\micro}S] 	\\ \hline
-	Selbstgbaut & $2.9$ 	& $19.6$	\\
-	IC 			& $232$ 	& $1520$	\\
-	Simulation 	& ALAN		& PLEASE FIX\\
-	\end{tabular}
-	\caption{Verzögerungszeiten an den NOR Gattern}
-	\label{verzögerungszeitenNOR}
-
-
-
-	\center
-	\begin{tabular}{c|c|c}
-	& Flanke steigend [\si{\micro}S] & Flanke fallend [\si{\micro}S] 	\\ \hline
-	Selbstgbaut & $5.6$ 	& $7.9$	\\
-	IC 			& $710$ 	& $130$	\\
-	Simulation 	& ALAN		& PLEASE FIX\\
-	\end{tabular}
-	\caption{Verzögerungszeiten an den NAND Gattern}
-	\label{verzögerungszeitenNAND}
-\end{table}
 
 \subsection*{Querströme}
 je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, ic) aufzeigt.
@@ -201,6 +193,35 @@ je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, 
 	\caption{Querstrom an den NAND Gattern}
 	\label{querstromNAND}
 \end{table}
+
+
+\subsection*{Verzögerungszeiten}
+Da die Verzögerungszeiten für beide Eingänge sehr ähnlich bzw. gleich waren, werden hier der Übersicht halber nur die Messergebnisse für die Veränderung des Zustands eines Eingangs aufgezeigt.
+
+\begin{table}[H]
+	\center
+	\begin{tabular}{c|c|c}
+	& Flanke steigend [\si{\micro}S] & Flanke fallend [\si{\micro}S] 	\\ \hline
+	Selbstgbaut & $2.9$ 	& $19.6$	\\
+	IC 			& $232$ 	& $1520$	\\
+	Simulation 	& ALAN		& PLEASE FIX\\
+	\end{tabular}
+	\caption{Verzögerungszeiten an den NOR Gattern}
+	\label{verzögerungszeitenNOR}
+
+
+
+	\center
+	\begin{tabular}{c|c|c}
+	& Flanke steigend [\si{\micro}S] & Flanke fallend [\si{\micro}S] 	\\ \hline
+	Selbstgbaut & $5.6$ 	& $7.9$	\\
+	IC 			& $710$ 	& $130$	\\
+	Simulation 	& ALAN		& PLEASE FIX\\
+	\end{tabular}
+	\caption{Verzögerungszeiten an den NAND Gattern}
+	\label{verzögerungszeitenNAND}
+\end{table}
+
 
 \section*{Auswertung}
 erwartung erfüllt? vergleich von steckbrett und ic
