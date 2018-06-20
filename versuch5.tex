@@ -117,6 +117,7 @@ Es wurden ein NAND- und ein NOR-Gatter untersucht. Beide Aufbauten sind für den
 Zu beachten ist, dass die Messpunkte für die Ausgangsspannung ($U_{OUT}$) und den Querstrom ($I_{quer}$) in den Schemata eingezeichnet sind. Hier wurden dann Multimeter Spannungs- bzw. Stromrichtig angeschlossen.
 Der Aufbau des NAND-Gatters ist in \autoref{aufbauNAND} dargestellt, der des NOR-Gatters in \autoref{aufbauNOR}. Die beiden Eingangsspannungen ($U_{IN1}$ und $U_{IN2}$) wurden zeitweise über entprellte Taster, sowie über den Funktionsgenerator bedient.
 Zur Messung der Verzögerungszeit wurde außerdem die Ausgangsspannung $U_{OUT}$ mithilfe des Oszilloskopes betrachtet.
+Mit gleicher Handhabung zum Messen wurden die Schaltungen mit Hilfe von ICs aufgebaut. Diese Aufbauten am Steckbrett sind in \autoref{aufbauNANDIC} (NAND) und \autoref{aufbauNORIC} (NOR) zu sehen.
 \begin{figure}[htb]
     \centering
     \begin{minipage}[t]{0.45\linewidth}
@@ -133,9 +134,22 @@ Zur Messung der Verzögerungszeit wurde außerdem die Ausgangsspannung $U_{OUT}$
         \label{aufbauNOR}
     \end{minipage}
 \end{figure}
-
-TODO::: AUFBAU MIT IC
-
+\begin{figure}[htb]
+    \centering
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{IC_NAND.pdf}
+        \caption{Aufbau des NAND-Gatters mit IC}
+        \label{aufbauNANDIC}
+    \end{minipage}% 
+    \hfill
+    \begin{minipage}[t]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{IC_NOR.pdf}
+        \caption{Aufbau des NOR-Gatters mit IC}
+        \label{aufbauNORIC}
+    \end{minipage}
+\end{figure}
 \subsection*{Verwendete Bauteile}
 Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannung von $5V$, jweils zwei Transistoren vom Typ \textit{ZVN3306a} sowie vom Typ \textit{ZVP3306a}, ein Kondensator mit einer Kapazität von $470nF$, Funktionsgenerator und Oszilloskop, IC vom Typ \textit{CD4007UB}.
 \section*{Durchführung}
