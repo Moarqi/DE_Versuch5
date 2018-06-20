@@ -152,6 +152,31 @@ TODO SIMULATION
 vier logiktabellen (inkl. erwartung)
 \subsection*{Querströme}
 je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, ic) aufzeigt.
+
+\begin{table}[h]
+	\center
+	\begin{tabular}{c|c|c}
+	& Flanke steigend [\si{\micro}S] & Flanke fallend [\si{\micro}S] 	\\ \hline
+	Selbstgbaut & $2.9$ 	& $19.6$	\\
+	IC 			& $232$ 	& $1520$	\\
+	Simulation 	& ALAN		& PLEASE FIX\\
+	\end{tabular}
+	\caption{Verzögerungszeiten an den NOR Gattern}
+	\label{verzögerungszeitenNOR}
+
+
+
+	\center
+	\begin{tabular}{c|c|c}
+	& Flanke steigend [\si{\micro}S] & Flanke fallend [\si{\micro}S] 	\\ \hline
+	Selbstgbaut & $5.6$ 	& $7.9$	\\
+	IC 			& $710$ 	& $130$	\\
+	Simulation 	& ALAN		& PLEASE FIX\\
+	\end{tabular}
+	\caption{Verzögerungszeiten an den NAND Gattern}
+	\label{verzögerungszeitenNAND}
+\end{table}
+
 \section*{Auswertung}
 erwartung erfüllt? vergleich von steckbrett und ic
 \end{document}
