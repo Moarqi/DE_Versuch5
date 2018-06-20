@@ -167,6 +167,31 @@ Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit e
 \subsection*{Logikverhalten}
 vier logiktabellen (inkl. erwartung)
 
+\begin{table}[H]
+	\center
+	\begin{tabular}{c|c||c||c|c|c}
+	Input A 	& Input B 	& Erwartetes Ergebnis 	& eigene Schaltung & IC & Simulation	\\ \hline
+	0 & 0 & 1 & 1 & 1 & 1		\\
+	0 & 1 & 0 & 0 & 0 & 0		\\
+	1 & 0 & 0 & 0 & 0 & 0		\\
+	1 & 1 & 0 & 0 & 0 & 0		\\
+	\end{tabular}
+	\caption{Logikverhalten der NOR Gatter}
+	\label{logikNOR}
+
+
+	\center
+	\begin{tabular}{c|c||c||c|c|c}
+	Input A 	& Input B 	& Erwartetes Ergebnis 	& eigene Schaltung & IC & Simulation	\\ \hline
+	0 & 0 & 1 & 1 & 1 & 1		\\
+	0 & 1 & 1 & 1 & 1 & 1		\\
+	1 & 0 & 1 & 1 & 1 & 1		\\
+	1 & 1 & 0 & 0 & 0 & 0		\\
+	\end{tabular}
+	\caption{Logikverhalten der NAND Gatter}
+	\label{logikNOR}
+\end{table}
+
 \subsection*{Querströme}
 je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, ic) aufzeigt.
 
