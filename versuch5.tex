@@ -154,7 +154,7 @@ Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannun
 
 \subsection*{Verifizierung des Logikverhaltens}
 
-Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier geprüft. Dabei wurden die Eingäng über entprellte Schalter angesteuert, welche an einem Netzteil mit 5V Versorgungsspannung angeschlossen waren. Am Ausgang der Schaltung befand sich eine LED, über deren Status (leuchtet oder leuchtet nicht) geprüft werden konnte, ob die Schaltung den Stromfluss zum Ausgang erlaubt. 
+Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier geprüft. Dabei wurden die Eingäng über entprellte Schalter angesteuert, welche an einem Netzteil mit 5V Versorgungsspannung angeschlossen waren. Am Ausgang der Schaltung befand sich eine LED, über deren Status (leuchtet oder leuchtet nicht) geprüft werden konnte, ob die Schaltung den Stromfluss zum Ausgang erlaubt. Ein Leuchten der LED wurde mit einer 1 eingetragen, ein nicht-Leuchten mit einer 0.
 
 \subsection*{Messung des statischen Querstroms}
 
@@ -194,7 +194,7 @@ Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit e
 	1 & 1 & 0 & 0 & 0 & 0		\\
 	\end{tabular}
 	\caption{Logikverhalten der NAND Gatter}
-	\label{logikNOR}
+	\label{logikNAND}
 \end{table}
 
 \subsection*{Querströme}
@@ -265,6 +265,8 @@ Da die Verzögerungszeiten für beide Eingänge sehr ähnlich bzw. gleich waren,
 \end{figure}
 
 \section*{Beobachtungen}
+Da die Ausgangswerte für alle Aufbauten mit den erwarteten Werten übereinstimmen (siehe \autoref{logikNOR} und \autoref{logikNAND}, können wir uns sicher sein, dass wir die Schaltungen korrekt aufgebaut haben
+
 Anhand von \autoref{graphQuerstrom} stellt man fest, dass in der Simulation keinerlei Querstrom abfällt. Da wir hier mit einer idealisierten Schaltung ohne implizite Widerstände arbeiten, ist dies auch nicht weiter verweunderlich.
 Dahingegen ist allerdings der große Unterschied zwischen dem selbstgebauten NOR- und NAND-Gatter auszumachen. Besonders interessant ist dazu das entgegengestzte Verhalten des ICs: Das integrierte NOR hat eine deutlich höhere Stromaufnahme als das integrierte NAND.
 \\
