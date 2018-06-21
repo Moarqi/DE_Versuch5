@@ -105,7 +105,7 @@
 \subsection*{Aufgabe}
 Im fünften Versuch sollten zwei verschiedene CMOS-Logikgatter mit mindestens zwei Eingängen sowohl simuliert als auch auf dem Steckbrett aufgebaut werden. Zur Untersuchung der Schaltung sollte das erwartete Verhalten anhand einer Logiktabelle mit dem gemessenen Verhalten verglichen werden. Des weiteren sollte die Schaltung durch eine integrierte Schaltung realisiert werden. Schließlich sollten alle Schaltungen auf ihre Verzögerungszeit und die Stromaufnahme untersucht werden.
 \subsection*{Erwartung}
-Die generelle Erwartung ist, dass alle Gatter-Aufbauten ein gleiches Logikverhalten aufweisen. Aus den letzten Versuchen abgeleitet ist eine teils hohe Abweichung zwischen realen und simulierten Messungen in Bezug auf die Verzögerungszeit und die Stromaufnahme zu erwarten. Dennoch ist auch eine Abweichung der Messwerte von integriertem Schaltkreis (auch IC (integrated Circuit)) und dem aus Transistoren aufgebauten Gatter möglich.
+Die generelle Erwartung ist, dass alle Gatter-Aufbauten gleichen Types (NAND, NOR) ein identisches Logikverhalten aufweisen. Aus den letzten Versuchen abgeleitet ist eine teils hohe Abweichung zwischen realen und simulierten Messungen in Bezug auf die Verzögerungszeit und die Stromaufnahme zu erwarten. Dennoch ist auch eine Abweichung der Messwerte von integriertem Schaltkreis (auch IC (integrated Circuit)) und dem aus Transistoren aufgebauten Gatter möglich.
 
 % Die Logikformeln sind jetzt in den Tabellen der Messwerte integriert
 
@@ -148,7 +148,7 @@ Mit gleicher Handhabung zum Messen wurden die Schaltungen mit Hilfe von ICs aufg
     \end{minipage}
 \end{figure}
 \subsection*{Verwendete Bauteile}
-Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannung von $5V$, jweils zwei Transistoren vom Typ \textit{ZVN3306a} sowie vom Typ \textit{ZVP3306a}, ein Kondensator mit einer Kapazität von $470nF$, Funktionsgenerator und Oszilloskop, IC vom Typ \textit{CD4007UB}.
+Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannung von $5V$, jweils zwei Transistoren vom Typ \textit{ZVN3306a} sowie vom Typ \textit{ZVP3306a}, ein Kondensator mit einer Kapazität von $470nF$, Funktionsgenerator und Oszilloskop, IC vom Typ \textit{CD4007UB}, entprellte Taster.
 
 \section*{Durchführung}
 
@@ -159,19 +159,17 @@ Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier g
 \subsection*{Messung des statischen Querstroms}
 
 Zur Messung des Querstroms wurde am Steckbrett ein Amperemeter in Reihe in den Versorgungsstromkreis geschaltet.
-Die Versorgungsspannung lag bei konstanten $U_{VDD} = 5V$ mit einer Strombegrenzung von etwa $I = 0.2A$. Es war darauf zu achten, dass während der Strommessung kein Schaltvorgang durchgeführt wurde, da sonst der dynamische statt dem statischen Querstrom gemessen würde.
+Die Versorgungsspannung lag bei konstanten $U_{DD} = 5V$ mit einer Strombegrenzung von etwa $I = 0.2A$. Es war darauf zu achten, dass während der Strommessung kein Schaltvorgang durchgeführt wurde, da sonst der dynamische statt dem statischen Querstrom gemessen würde.
 In der Simulation wurde die Stromaufnahme an der Spannungsquelle gemessen. 
 
 \subsection*{Messung der Verzögerungszeit}
 
 Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit einer vom Funktionsgenerator generierten Kurve zu versorgen. Die Eingangskurve sowie der Spannungsverlauf am Ausgang wurden vom Oszilloskop aufgenommen und die Verzögerungszeit für die steigende als auch die abfallende Flanke mithilfe der Cursor bestimmt. \\
 
-Ähnlich wurde die Verzögerungszeit in der Simulation bestimmt. Die beiden Eingänge wurden als pulsierende Spannungsquellen definiert, die eine unterschiedlichen Rythmus [DER SATZ HÖRT HIER AUF :D]
+Ähnlich wurde die Verzögerungszeit in der Simulation bestimmt. Die beiden Eingänge wurden als pulsierende Spannungsquellen definiert, welchen unterschiedliche Rhythmen zugeordnet wurden. so konnten alle Flanken untersucht werden. Die Verzögerungszeiten wurden auch hier mithilfe der Cursor in der Software gemessen.
 
 \section*{Messergebnisse}
 \subsection*{Logikverhalten}
-
-
 \begin{table}[H]
 	\center
 	\begin{tabular}{c|c||c||c|c|c}
@@ -231,7 +229,7 @@ Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit e
 
 
 \subsection*{Verzögerungszeiten}
-Da die Verzögerungszeiten für beide Eingänge sehr ähnlich bzw. gleich waren, werden hier der Übersicht halber nur die Messergebnisse für die Veränderung des Zustands eines Eingangs aufgezeigt.
+Da die Verzögerungszeiten für beide Eingänge sehr ähnlich bzw. gleich waren, werden hier der Übersicht halber nur die Messergebnisse für die Veränderung des Zustands eines Eingangs aufgezeigt (Simulation und Messung).
 
 \begin{table}[H]
 	\center
@@ -271,15 +269,13 @@ Dahingegen ist allerdings der große Unterschied zwischen dem selbstgebauten NOR
 Erkennbar an \autoref{graphVerzögerungen}, stechen die Verzögerungszeiten der integrierten Schaltungen besonders heraus und liegen bis zu 76 Mal höher als bei der selbstgebauten Schaltung. Zudem fällt auf, dass die fallende Flanke an allen NOR Gattern etwas stärker verzögert ist als in den anderen Fällen.
 
 \section*{Auswertung}
-Überraschend ist der große Unterschied zwichen Stromaufnahme des NORs und des NANDs, da beide die gleichen Bauteile verwenden, nur in einer anderen Konfiguration. Bei genauerer Überlegung kommt man jedoch zu dem Schuss, dass aufgrund der Tatsache, dass die Schaltungen unterschiedliche Ergebnisse erzielen auch unterschiedliche interne Zustände besitzen. Kurz gesagt: Das NAND hat eine höhere Stromaufnahme, da im statischen Zustand mehr Transistoren angesprochen werden als beim NOR. Daraus folgt dann auch der höhrere statische Querstrom. Im Gegensatz dazu steht jetzt allerdings das IC. Hier kann nur vermutet werden, dass aufgrund der internen Schaltung das NAND etwas simpler ist als das NOR und dementsprechend auch einen geringeren Querstrom aufzeigt.
+Überraschend ist der große Unterschied zwichen Stromaufnahme des NORs und des NANDs, da beide die gleichen Bauteile verwenden, nur in einer anderen Konfiguration. Bei genauerer Überlegung kommt man jedoch zu dem Schuss, dass aufgrund der Tatsache, dass die Schaltungen unterschiedliche Ergebnisse erzielen auch unterschiedliche interne Zustände besitzen. Kurz gesagt: Das NAND hat eine höhere Stromaufnahme, da im statischen Zustand mehr Transistoren angesprochen werden als beim NOR. Daraus folgt dann auch der höhrere statische Querstrom. Im Gegensatz dazu steht allerdings der IC. Hier kann nur vermutet werden, dass aufgrund der internen Schaltung das NAND etwas simpler ist als das NOR und dementsprechend auch einen geringeren Querstrom aufzeigt.
 \\
 \\
-Die deutlich langsamere Schaltzeit der ICs erklärt sich dadurch, dass die ICs Bausteine mit vielen verschiedenen Funktionen sind und dementsprechend auch mehr Transistoren besitzen, welche die Schaltzeit negativ beeinflussen.
+Die deutlich langsamere Schaltzeit der ICs erklärt sich dadurch, dass die ICs Bausteine mit vielen verschiedenen Funktionen sind und dementsprechend auch mehr Transistoren besitzen, welche die Schaltzeit negativ beeinflussen. Zudem könnte das Verschalten mehrerer Ein- und Ausgänge am Steckbrett negative Auswirkungen auf die Schaltzeit zeigen.
 Die Steckbrettschaltung sowie die Simulation liegen hingegen sehr nah beieinander, wobei die Verzögerungszeit auf dem Steckbrett etwas geringer ist als die simulierte. Da die Bauteile alle eine gewisse Fehlertoleranz haben, werden identische Schaltungen mit unterschiedlichen Transistoren gleicher Baureihe unterschiedliche Ergebnisse erzielen. Die im LTSpice verwendeten Transistoren halten sich dabei an den vom Hersteller garantierten Wert und schalten dementsprechend ein wenig langsamer.
 \\
 Hieraus lässt sich entnehmen, dass für eine besonders kurze Verzögerung eine dedizierte Schaltung besser geeignet ist, als ein Multifunktionsbaustein, welcher dann auf eine bestimmte Funktion beschränkt wird.
-
-
-[ERWARTUNGEN? Blub, habe keine Ahnung]
-
+\\
+Abschließend ist zu sagen, dass alle Erwartungen hinreichend erfüllt wurden. So zeigen alle Aufbauten ein erwartetes Logikverhalten und auch die erwarteten Differenzen sind aufgetreten. Allerdings sind die gemessenen Differenzen so verteilt, dass sich eine genaue Aussage auf die Ursache dieser nicht gegeben werden kann.
 \end{document}
