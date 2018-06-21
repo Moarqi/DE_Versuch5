@@ -263,7 +263,7 @@ Da die Verzögerungszeiten für beide Eingänge sehr ähnlich bzw. gleich waren,
 \end{figure}
 
 \section*{Beobachtungen}
-Da die Ausgangswerte für alle Aufbauten mit den erwarteten Werten übereinstimmen (siehe \autoref{logikNOR} und \autoref{logikNAND}, können wir uns sicher sein, dass wir die Schaltungen korrekt aufgebaut haben
+Da die Ausgangswerte für alle Aufbauten mit den erwarteten Werten für das logische Verhalten übereinstimmen (siehe \autoref{logikNOR} und \autoref{logikNAND}, können wir uns sicher sein, dass wir die Schaltungen korrekt aufgebaut haben
 
 Anhand von \autoref{graphQuerstrom} stellt man fest, dass in der Simulation keinerlei Querstrom abfällt. Da wir hier mit einer idealisierten Schaltung ohne implizite Widerstände arbeiten, ist dies auch nicht weiter verweunderlich.
 Dahingegen ist allerdings der große Unterschied zwischen dem selbstgebauten NOR- und NAND-Gatter auszumachen. Besonders interessant ist dazu das entgegengestzte Verhalten des ICs: Das integrierte NOR hat eine deutlich höhere Stromaufnahme als das integrierte NAND.
@@ -278,6 +278,7 @@ Die deutlich langsamere Schaltzeit der ICs erklärt sich dadurch, dass die ICs B
 Die Steckbrettschaltung sowie die Simulation liegen hingegen sehr nah beieinander, wobei die Verzögerungszeit auf dem Steckbrett etwas geringer ist als die simulierte. Da die Bauteile alle eine gewisse Fehlertoleranz haben, werden identische Schaltungen mit unterschiedlichen Transistoren gleicher Baureihe unterschiedliche Ergebnisse erzielen. Die im LTSpice verwendeten Transistoren halten sich dabei an den vom Hersteller garantierten Wert und schalten dementsprechend ein wenig langsamer.
 \\
 Hieraus lässt sich entnehmen, dass für eine besonders kurze Verzögerung eine dedizierte Schaltung besser geeignet ist, als ein Multifunktionsbaustein, welcher dann auf eine bestimmte Funktion beschränkt wird.
+\\
 \\
 Abschließend ist zu sagen, dass alle Erwartungen hinreichend erfüllt wurden. So zeigen alle Aufbauten ein erwartetes Logikverhalten und auch die erwarteten Differenzen sind aufgetreten. Allerdings sind die gemessenen Differenzen so verteilt, dass sich eine genaue Aussage auf die Ursache dieser nicht gegeben werden kann.
 \end{document}
