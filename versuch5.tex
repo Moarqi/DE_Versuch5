@@ -105,7 +105,7 @@
 \subsection*{Aufgabe}
 Im fünften Versuch sollten zwei verschiedene CMOS-Logikgatter mit mindestens zwei Eingängen sowohl simuliert als auch auf dem Steckbrett aufgebaut werden. Zur Untersuchung der Schaltung sollte das erwartete Verhalten anhand einer Logiktabelle mit dem gemessenen Verhalten verglichen werden. Des weiteren sollte die Schaltung durch eine integrierte Schaltung realisiert werden. Schließlich sollten alle Schaltungen auf ihre Verzögerungszeit und die Stromaufnahme untersucht werden.
 \subsection*{Erwartung}
-Die generelle Erwartung ist, dass alle Gatter-Aufbauten ein gleiches Logikverhalten aufweisen. Aus den letzten Versuchen abgeleitet ist eine teils hohe Abweichung zwischen realen und simulierten Messungen in Bezug auf die Verzögerungszeit und die Stromaufnahme zu erwarten. Dennoch ist auch eine Abweichung der Messwerte von integriertem Schaltkreis (auch IC (integrated Circuit)) und dem aus transistoren aufgebauten Gatter möglich.
+Die generelle Erwartung ist, dass alle Gatter-Aufbauten ein gleiches Logikverhalten aufweisen. Aus den letzten Versuchen abgeleitet ist eine teils hohe Abweichung zwischen realen und simulierten Messungen in Bezug auf die Verzögerungszeit und die Stromaufnahme zu erwarten. Dennoch ist auch eine Abweichung der Messwerte von integriertem Schaltkreis (auch IC (integrated Circuit)) und dem aus Transistoren aufgebauten Gatter möglich.
 
 % Die Logikformeln sind jetzt in den Tabellen der Messwerte integriert
 
@@ -149,20 +149,28 @@ Mit gleicher Handhabung zum Messen wurden die Schaltungen mit Hilfe von ICs aufg
 \end{figure}
 \subsection*{Verwendete Bauteile}
 Multimeter, ein Strombegrenztes Versorgungsnetzteil mit einer konstanten Spannung von $5V$, jweils zwei Transistoren vom Typ \textit{ZVN3306a} sowie vom Typ \textit{ZVP3306a}, ein Kondensator mit einer Kapazität von $470nF$, Funktionsgenerator und Oszilloskop, IC vom Typ \textit{CD4007UB}.
+
 \section*{Durchführung}
+
 \subsection*{Verifizierung des Logikverhaltens}
+
 Die Auswirkungen jeder Eingangskombination auf die Ausgangsspannung wurde hier geprüft. Dabei wurden die Eingäng über entprellte Schalter angesteuert, welche an einem Netzteil mit 5V Versorgungsspannung angeschlossen waren. Am Ausgang der Schaltung befand sich eine LED, über deren Status (leuchtet oder leuchtet nicht) geprüft werden konnte, ob die Schaltung den Stromfluss zum Ausgang erlaubt. 
+
 \subsection*{Messung des statischen Querstroms}
+
 Zur Messung des Querstroms wurde am Steckbrett ein Amperemeter in Reihe in den Versorgungsstromkreis geschaltet.
 Die Versorgungsspannung lag bei konstanten $U_{VDD} = 5V$ mit einer Strombegrenzung von etwa $I = 0.2A$. Es war darauf zu achten, dass während der Strommessung kein Schaltvorgang durchgeführt wurde, da sonst der dynamische statt dem statischen Querstrom gemessen würde.
 In der Simulation wurde die Stromaufnahme an der Spannungsquelle gemessen. 
-\subsection*{Messung der Verzögerungszeit}
-Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit einer vom Funktionsgenerator generierten Kurve zu versorgen. Die Eingangskurve sowie der Spannungsverlauf am Ausgang wurden vom Oszilloskop aufgenommen und die Verzögerungszeit für die steigende als auch die abfallende Flanke mithilfe der Cursor bestimmt.
 
-Ähnlich wurde die Verzögerungszeit in der Simulation bestimmt. Die beiden Eingänge wurden als pulsierende Spannungsquellen definiert, die eine unterschiedlichen Rythmus
+\subsection*{Messung der Verzögerungszeit}
+
+Am Steckbrett wurde das Oszilloskop genutzt, um einen oder beide Eingänge mit einer vom Funktionsgenerator generierten Kurve zu versorgen. Die Eingangskurve sowie der Spannungsverlauf am Ausgang wurden vom Oszilloskop aufgenommen und die Verzögerungszeit für die steigende als auch die abfallende Flanke mithilfe der Cursor bestimmt. \\
+
+Ähnlich wurde die Verzögerungszeit in der Simulation bestimmt. Die beiden Eingänge wurden als pulsierende Spannungsquellen definiert, die eine unterschiedlichen Rythmus [DER SATZ HÖRT HIER AUF :D]
+
 \section*{Messergebnisse}
 \subsection*{Logikverhalten}
-vier logiktabellen (inkl. erwartung)
+
 
 \begin{table}[H]
 	\center
@@ -190,7 +198,6 @@ vier logiktabellen (inkl. erwartung)
 \end{table}
 
 \subsection*{Querströme}
-je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, ic) aufzeigt.
 
 \begin{table}[H]
 	\center
@@ -204,7 +211,6 @@ je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, 
 	\label{querstromNAND}
 
 
-
 	\center
 	\begin{tabular}{c|c}
 	& Querstrom [\si{\micro\ampere}]	\\ \hline
@@ -215,6 +221,13 @@ je schaltung eine tabelle die den Strom der konfigurationenen (sim, steckbrett, 
 	\caption{statischer Querstrom an den NAND Gattern}
 	\label{querstromNAND}
 \end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/querstrom.png}
+    \caption{Querströme}
+    \label{graphQuerstrom}
+\end{figure}
 
 
 \subsection*{Verzögerungszeiten}
@@ -244,7 +257,29 @@ Da die Verzögerungszeiten für beide Eingänge sehr ähnlich bzw. gleich waren,
 	\label{verzögerungszeitenNAND}
 \end{table}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/verzoegerungen.png}
+    \caption{Verzögerungszeiten}
+    \label{graphVerzögerungen}
+\end{figure}
+
+\section*{Beobachtungen}
+Anhand von \autoref{graphQuerstrom} stellt man fest, dass in der Simulation keinerlei Querstrom abfällt. Da wir hier mit einer idealisierten Schaltung ohne implizite Widerstände arbeiten, ist dies auch nicht weiter verweunderlich.
+Dahingegen ist allerdings der große Unterschied zwischen dem selbstgebauten NOR- und NAND-Gatter auszumachen. Besonders interessant ist dazu das entgegengestzte Verhalten des ICs: Das integrierte NOR hat eine deutlich höhere Stromaufnahme als das integrierte NAND.
+\\
+Erkennbar an \autoref{graphVerzögerungen}, stechen die Verzögerungszeiten der integrierten Schaltungen besonders heraus und liegen bis zu 76 Mal höher als bei der selbstgebauten Schaltung. Zudem fällt auf, dass die fallende Flanke an allen NOR Gattern etwas stärker verzögert ist als in den anderen Fällen.
 
 \section*{Auswertung}
-erwartung erfüllt? vergleich von steckbrett und ic
+Überraschend ist der große Unterschied zwichen Stromaufnahme des NORs und des NANDs, da beide die gleichen Bauteile verwenden, nur in einer anderen Konfiguration. Bei genauerer Überlegung kommt man jedoch zu dem Schuss, dass aufgrund der Tatsache, dass die Schaltungen unterschiedliche Ergebnisse erzielen auch unterschiedliche interne Zustände besitzen. Kurz gesagt: Das NAND hat eine höhere Stromaufnahme, da im statischen Zustand mehr Transistoren angesprochen werden als beim NOR. Daraus folgt dann auch der höhrere statische Querstrom. Im Gegensatz dazu steht jetzt allerdings das IC. Hier kann nur vermutet werden, dass aufgrund der internen Schaltung das NAND etwas simpler ist als das NOR und dementsprechend auch einen geringeren Querstrom aufzeigt.
+\\
+\\
+Die deutlich langsamere Schaltzeit der ICs erklärt sich dadurch, dass die ICs Bausteine mit vielen verschiedenen Funktionen sind und dementsprechend auch mehr Transistoren besitzen, welche die Schaltzeit negativ beeinflussen.
+Die Steckbrettschaltung sowie die Simulation liegen hingegen sehr nah beieinander, wobei die Verzögerungszeit auf dem Steckbrett etwas geringer ist als die simulierte. Da die Bauteile alle eine gewisse Fehlertoleranz haben, werden identische Schaltungen mit unterschiedlichen Transistoren gleicher Baureihe unterschiedliche Ergebnisse erzielen. Die im LTSpice verwendeten Transistoren halten sich dabei an den vom Hersteller garantierten Wert und schalten dementsprechend ein wenig langsamer.
+\\
+Hieraus lässt sich entnehmen, dass für eine besonders kurze Verzögerung eine dedizierte Schaltung besser geeignet ist, als ein Multifunktionsbaustein, welcher dann auf eine bestimmte Funktion beschränkt wird.
+
+
+[ERWARTUNGEN? Blub, habe keine Ahnung]
+
 \end{document}
